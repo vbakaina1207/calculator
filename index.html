@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div id="calc" class="text-center">
+            <div id="display">
+                <div id="result"></div>
+                <div id="previous">0</div>
+            </div>
+            <div id="keyboard">
+                <div class="row marg d-flex justify-content-center">
+                    <button type="button" class="btn btn-secondary m-1 col-3" onclick="calculator.clearNumbers();">AC</button>
+                    <button type="button" class="btn btn-secondary m-1 col-3" onclick="calculator.clearLastNumber();">&#9003</button>
+                    <button type="button" class="btn btn-secondary m-1 col-3" onclick="calculator.setOperator('/');">&#x00F7</button>
+                    <button type="button" class="btn btn-secondary m-1 col-3" onclick="calculator.setOperator('*');">&#215</button>
+                </div>
+                <div class="row marg d-flex justify-content-center">
+                    <button type="button" class="btn btn-light m-1 col-3" onclick="calculator.numberClick(event);">7</button>
+                    <button type="button" class="btn btn-light m-1 col-3" onclick="calculator.numberClick(event);">8</button>
+                    <button type="button" class="btn btn-light m-1 col-3" onclick="calculator.numberClick(event);">9</button>
+                    <button type="button" class="btn btn-secondary m-1 col-3" onclick="calculator.setOperator('-');">-</button>
+                </div>
+                <div class="row marg d-flex justify-content-center">
+                    <button type="button" class="btn btn-light m-1 col-3" onclick="calculator.numberClick(event);">4</button>
+                    <button type="button" class="btn btn-light m-1 col-3" onclick="calculator.numberClick(event);">5</button>
+                    <button type="button" class="btn btn-light m-1 col-3" onclick="calculator.numberClick(event);">6</button>
+                    <button type="button" class="btn btn-secondary m-1 col-3" onclick="calculator.setOperator('+');">+</button>
+                </div>
+                <div class="row marg d-flex justify-content-center">
+                    <button type="button" class="btn btn-light m-1 col-3" onclick="calculator.numberClick(event);">1</button>
+                    <button type="button" class="btn btn-light m-1 col-3" onclick="calculator.numberClick(event);">2</button>
+                    <button type="button" class="btn btn-light m-1 col-3" onclick="calculator.numberClick(event);">3</button>
+                    <button type="button" class="btn btn-secondary m-1 col-3 btn-result" onclick="calculator.setOperator('=');">=</button>                   
+                </div>
+                <div class="row marg  last-row">
+                    <button type="button" class="btn col-6 btn-light m-1 btn-null" onclick="calculator.numberClick(event);">0</button>
+                    <button type="button" class="btn btn-light m-1 col-3" onclick="calculator.numberClick(event);">.</button>                                        
+                </div>
+                
+            </div>
+            
+        </div>    
+    </div>
+    
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.min.js" integrity="sha512-8Y8eGK92dzouwpROIppwr+0kPauu0qqtnzZZNEF8Pat5tuRNJxJXCkbQfJ0HlUG3y1HB3z18CSKmUo7i2zcPpg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="script.js"></script>
+</body>
+</html>
